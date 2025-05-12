@@ -1,37 +1,38 @@
-"use client"
+"use client";
 
-import type React from "react"
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { cn } from "@/lib/utils"
-import ThemeToggle from "./theme-toggle"
-import { Menu } from "lucide-react"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Image from "next/image"
+import type React from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+import ThemeToggle from "./theme-toggle";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Navbar() {
-  const [activeLink, setActiveLink] = useState("home")
-  const [scrolled, setScrolled] = useState(false)
+  const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center px-4 py-4">
       <div
         className={cn(
           "flex items-center justify-between rounded-full bg-background/80 backdrop-blur-md transition-all duration-300",
-          scrolled ? "w-[40%] py-2 px-4 shadow-md" : "container mx-auto py-3 px-6",
+          scrolled
+            ? "w-[40%] py-2 px-4 shadow-md"
+            : "container mx-auto py-3 px-6"
         )}
       >
         <Link href="/" className="text-xl font-bold">
@@ -40,16 +41,32 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <NavLink href="/" active={activeLink === "home"} onClick={() => setActiveLink("home")}>
+          <NavLink
+            href="/"
+            active={activeLink === "home"}
+            onClick={() => setActiveLink("home")}
+          >
             Home
           </NavLink>
-          <NavLink href="/about" active={activeLink === "about"} onClick={() => setActiveLink("about")}>
+          <NavLink
+            href="/about"
+            active={activeLink === "about"}
+            onClick={() => setActiveLink("about")}
+          >
             About
           </NavLink>
-          <NavLink href="/projects" active={activeLink === "projects"} onClick={() => setActiveLink("projects")}>
+          <NavLink
+            href="/projects"
+            active={activeLink === "projects"}
+            onClick={() => setActiveLink("projects")}
+          >
             Projects
           </NavLink>
-          <NavLink href="/contact" active={activeLink === "contact"} onClick={() => setActiveLink("contact")}>
+          <NavLink
+            href="/contact"
+            active={activeLink === "contact"}
+            onClick={() => setActiveLink("contact")}
+          >
             Contact
           </NavLink>
         </nav>
@@ -66,10 +83,18 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full sm:w-80">
               <nav className="flex flex-col gap-6 mt-12">
-                <MobileNavLink href="/" active={activeLink === "home"} onClick={() => setActiveLink("home")}>
+                <MobileNavLink
+                  href="/"
+                  active={activeLink === "home"}
+                  onClick={() => setActiveLink("home")}
+                >
                   Home
                 </MobileNavLink>
-                <MobileNavLink href="/about" active={activeLink === "about"} onClick={() => setActiveLink("about")}>
+                <MobileNavLink
+                  href="/about"
+                  active={activeLink === "about"}
+                  onClick={() => setActiveLink("about")}
+                >
                   About
                 </MobileNavLink>
                 <MobileNavLink
@@ -92,14 +117,14 @@ export default function Navbar() {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 interface NavLinkProps {
-  href: string
-  active: boolean
-  onClick: () => void
-  children: React.ReactNode
+  href: string;
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
 }
 
 function NavLink({ href, active, onClick, children }: NavLinkProps) {
@@ -108,7 +133,9 @@ function NavLink({ href, active, onClick, children }: NavLinkProps) {
       href={href}
       className={cn(
         "relative px-1 py-2 transition-colors",
-        active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+        active
+          ? "text-foreground"
+          : "text-muted-foreground hover:text-foreground"
       )}
       onClick={onClick}
     >
@@ -117,17 +144,20 @@ function NavLink({ href, active, onClick, children }: NavLinkProps) {
         <span className="absolute left-1/2 -translate-x-1/2 -bottom-1 w-1.5 h-1.5 bg-green-500 rounded-full" />
       )}
     </Link>
-  )
+  );
 }
 
 function MobileNavLink({ href, active, onClick, children }: NavLinkProps) {
   return (
     <Link
       href={href}
-      className={cn("text-2xl font-medium transition-colors", active ? "text-foreground" : "text-muted-foreground")}
+      className={cn(
+        "text-2xl font-medium transition-colors",
+        active ? "text-foreground" : "text-muted-foreground"
+      )}
       onClick={onClick}
     >
       {children}
     </Link>
-  )
+  );
 }
