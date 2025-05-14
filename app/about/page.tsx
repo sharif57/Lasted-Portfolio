@@ -56,15 +56,15 @@ export default function Home() {
             ABOUT ME
           </h2>
 
-          <p className="lg:text-3xl font-normal text-justify lg:text-center leading-relaxed text-muted-foreground text-lg">
-            I&apos;m Devraj Chatribin, with over 4+ years of experience in
-            design & development with strong focus on producing high quality &
-            impactful digital experiences. I have worked with some of the most
-            innovative industry leaders to help build their top-notch products.
-          </p>
+            <p className="lg:text-3xl font-normal text-justify lg:text-center leading-relaxed text-muted-foreground text-lg">
+            I&apos;m Sharif Mahamud, a passionate frontend developer with 1 year of
+            experience in design & development, focusing on creating high quality &
+            impactful digital experiences. I specialize in building responsive and
+            user-friendly web applications using modern technologies.
+            </p>
         </section>
 
-        <div className="relative w-[300px] h-[500px] mx-auto overflow-hidden">
+        {/* <div className="relative w-[300px] h-[500px] mx-auto overflow-hidden">
           <Image
             src="/IMG_0091 (1).jpeg"
             alt="sharif mahamud"
@@ -73,7 +73,7 @@ export default function Home() {
             className="object-cover rounded-b-full"
             // style={{ opacity }}
           />
-        </div>
+        </div> */}
       </div>
     </main>
   );
