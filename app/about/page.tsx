@@ -56,12 +56,13 @@ export default function Home() {
             ABOUT ME
           </h2>
 
-            <p className="lg:text-3xl font-normal text-justify lg:text-center leading-relaxed text-muted-foreground text-lg">
-            I&apos;m Sharif Mahamud, a passionate frontend developer with 1 year of
-            experience in design & development, focusing on creating high quality &
-            impactful digital experiences. I specialize in building responsive and
-            user-friendly web applications using modern technologies.
-            </p>
+          <p className="lg:text-3xl font-normal text-justify lg:text-center leading-relaxed text-muted-foreground text-lg">
+            I&apos;m Sharif Mahamud, a passionate frontend developer with 1 year
+            of experience in design & development, focusing on creating high
+            quality & impactful digital experiences. I specialize in building
+            responsive and user-friendly web applications using modern
+            technologies.
+          </p>
         </section>
 
         {/* <div className="relative w-[300px] h-[500px] mx-auto overflow-hidden">
