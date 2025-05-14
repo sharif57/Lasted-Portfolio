@@ -120,12 +120,12 @@ export default function ContactPage() {
                   </span>
                 </div>
 
-                <div className="flex flex-col items-start text-justify">
-                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-100 mb-6">
+                <div className="flex flex-col items-start text-justify ">
+                  <div className="w-24 h-24 rounded-full overflow-hidden p-2 border-2 border-gray-100 dark:border-gray-800 mb-6">
                     <img
                       src="/sharif.jpg"
                       alt="Profile"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full rounded-full object-cover"
                     />
                   </div>
 

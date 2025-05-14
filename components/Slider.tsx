@@ -3,18 +3,18 @@
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import Link from "next/link";
-import { Star } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const menuItems = [
-  { name: "Websites", icon:<Star />,  href: "/websites" },
-  { name: "Designing", href: "/designing" },
-  { name: "Graphics",  icon:<Star />,  href: "/graphics" },
-  { name: "Animations",  icon:<Star />,  href: "/animations" },
-  { name: "Community",  icon:<Star />,  href: "/community" },
-  { name: "Dashboard",  icon:<Star />,  href: "/dashboard" },
-  { name: "Dashboard",  icon:<Star />,  href: "/dashboard" },
-  { name: "Dashboard",  icon:<Star />,  href: "/dashboard" },
-  { name: "Dashboard",  icon:<Star />,  href: "/dashboard" },
+  { name: "Frontend", icon: <Sparkles />, href: "/frontend" },
+  { name: "Backend", icon: <Sparkles />, href: "/backend" },
+  { name: "Full Stack", icon: <Sparkles />, href: "/fullstack" },
+  { name: "UI/UX", icon: <Sparkles />, href: "/ui-ux" },
+  { name: "DevOps", icon: <Sparkles />, href: "/devops" },
+  { name: "Cloud", icon: <Sparkles />, href: "/cloud" },
+  { name: "Mobile Dev", icon: <Sparkles />, href: "/mobile" },
+  { name: "Web Security", icon: <Sparkles />, href: "/security" },
+  { name: "Database", icon: <Sparkles />, href: "/database" }
 ];
 
 export default function Slider() {
