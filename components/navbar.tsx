@@ -31,7 +31,7 @@ export default function Navbar() {
         className={cn(
           "flex items-center justify-between rounded-full bg-background/80 backdrop-blur-md transition-all duration-300",
           scrolled
-            ? "w-[40%] py-2 px-4 shadow-md"
+            ? "lg:w-[40%] w-[80%] py-2 px-4 shadow-md"
             : "container mx-auto py-3 px-6"
         )}
       >

@@ -117,7 +117,7 @@ export default function TestimonialCarousel() {
               <span className="uppercase tracking-wide">Testimonials</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 tracking-tight">What others say</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 dark:text-white tracking-tight">What others say</h2>
 
             <p className="text-lg text-gray-600">
               I&apos;ve worked with some amazing people over the years, here is what they have to say about me.
@@ -146,7 +146,7 @@ export default function TestimonialCarousel() {
                   </div>
 
                   <div className="mb-6">
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 dark:text-white leading-relaxed">
                       {testimonials[currentIndex].content}
                       <button className="text-emerald-600 font-medium ml-1 hover:underline focus:outline-none">
                         see more
@@ -159,7 +159,7 @@ export default function TestimonialCarousel() {
                       href={testimonials[currentIndex].linkedIn}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-gray-700 hover:text-emerald-600 transition-colors"
+                      className="inline-flex items-center text-gray-700 dark:text-white hover:text-emerald-600  dark:hover:text-emerald-600 transition-colors"
                     >
                       Check it out on LinkedIn
                       <ArrowUpRight className="ml-1 h-4 w-4" />

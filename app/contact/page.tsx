@@ -1,8 +1,12 @@
-export default function ContactPage() {
+import ContactPage from '@/components/ContactPage'
+import FAQSection from '@/components/Faq'
+import React from 'react'
+
+export default function page() {
   return (
-    <div className="min-h-screen pt-24 px-4 md:px-6 container mx-auto">
-      <h1 className="text-4xl font-bold mb-6">Contact</h1>
-      <p className="text-muted-foreground">Contact page content goes here.</p>
+    <div>
+      <ContactPage/>
+      <FAQSection />
     </div>
   )
 }

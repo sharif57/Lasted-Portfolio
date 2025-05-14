@@ -41,7 +41,7 @@ export default function Slider() {
           gradient={false}
           play={!pauseMarquee}
         >
-          <div className="flex space-x-12 px-8 border lg:py-10 py-5">
+          <div className="flex space-x-12 px-8  border-t-2 border-b-2 lg:py-10 py-5">
             {menuItems.map((item) => (
               <Link
                 key={item.name}

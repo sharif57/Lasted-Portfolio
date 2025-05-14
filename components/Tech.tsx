@@ -53,7 +53,7 @@ export default function Tech() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="  text-xl lg:text-xl flex items-center gap-3 text-gray-500 font-normal tracking-tighter hover:text-gray-800  transition-colors duration-300 px-4"
+                className="  text-xl bg-white px-4 dark:bg-[#191920] dark:text-white py-2 rounded-full lg:text-xl flex items-center gap-3 text-black font-normal  hover:text-gray-800  transition-colors duration-300 "
               >
                 <Image src={item.icon} alt={item.name} width={20} height={20} />
                 {item.name}
