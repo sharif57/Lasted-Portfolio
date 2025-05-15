@@ -9,9 +9,9 @@ import Footer from "@/components/Contact"
 const inter = Poppins({ weight: ["400"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Portfolio - DC",
+  title: "Portfolio - SM",
   description: "Personal portfolio website",
-    generator: 'v0.dev'
+    generator: 'Sharif Mahamud'
 }
 
 export default function RootLayout({
