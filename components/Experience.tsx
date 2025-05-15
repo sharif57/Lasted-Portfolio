@@ -468,7 +468,7 @@ export default function WorkExperience() {
           <span className="inline-block px-4 py-1 rounded-full bg-[#9FEF00]/10 text-[#30af5b] dark:text-[#9FEF00] text-sm font-medium mb-4">
             MY JOURNEY
           </span>
-          <h2 className="text-4xl md:text-5xl font-medium mb-4">Experience & Education</h2>
+          <h2 className="text-4xl md:text-5xl font-medium text-black dark:text-white mb-4">Experience & Education</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             My professional journey and educational background that have shaped my skills and expertise.
           </p>

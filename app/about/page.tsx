@@ -1,3 +1,4 @@
+import CommunitySection from "@/components/CommunitySection";
 import DesignProcess from "@/components/Desing";
 import WorkExperience from "@/components/Experience";
 import Tech from "@/components/Tech";
@@ -7,7 +8,10 @@ export default function AboutUs() {
     <div className="mt-28">
       <Tech />
       <WorkExperience />
+
       <DesignProcess />
+
+      <CommunitySection />
     </div>
   );
 }

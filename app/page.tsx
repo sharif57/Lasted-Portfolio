@@ -17,7 +17,7 @@ export default function Home() {
 
       <Slider />
 
-      <AboutMe/>
+      {/* <AboutMe/> */}
       <ProjectsSection/>
       <EnhancedExpertiseSection></EnhancedExpertiseSection>
       <Tech/>
