@@ -87,8 +87,8 @@
 //       <div className="container mx-auto flex flex-col md:flex-row justify-between">
 //         <div>
 //           <div className="flex items-center gap-2 mb-4">
-//           <Sparkles className="h-5 w-5 text-[#30af5b]" />
-//             <span className="text-sm uppercase text-[#30af5b] tracking-wider font-medium">
+//           <Sparkles className="h-5 w-5 text-[#9FEF00]" />
+//             <span className="text-sm uppercase text-[#9FEF00] tracking-wider font-medium">
 //               WORK HISTORY
 //             </span>
 //           </div>
@@ -249,7 +249,7 @@ export default function WorkExperience() {
     <section className="text-white py-16 px-4 md:px-8 lg:px-16">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1 rounded-full bg-[#30af5b]/10 text-[#30af5b] text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1 rounded-full bg-[#9FEF00]/10 text-[#30af5b] dark:text-[#9FEF00] text-sm font-medium mb-4">
             MY JOURNEY
           </span>
           <h2 className="text-4xl md:text-5xl font-medium mb-4">Experience & Education</h2>
@@ -264,7 +264,7 @@ export default function WorkExperience() {
             <button
               onClick={() => setActiveFilter("all")}
               className={`px-4 py-2 rounded-full text-sm font-normal transition-colors ${
-                activeFilter === "all" ? "bg-[#30af5b] text-black" : "text-white hover:bg-gray-700"
+                activeFilter === "all" ? "bg-[#9FEF00] text-black" : "text-white hover:bg-gray-700"
               }`}
             >
               All
@@ -272,7 +272,7 @@ export default function WorkExperience() {
             <button
               onClick={() => setActiveFilter("work")}
               className={`px-4 py-2 rounded-full text-sm font-normal transition-colors ${
-                activeFilter === "work" ? "bg-[#30af5b] text-black" : "text-white hover:bg-gray-700"
+                activeFilter === "work" ? "bg-[#9FEF00] text-black" : "text-white hover:bg-gray-700"
               }`}
             >
               Work
@@ -280,7 +280,7 @@ export default function WorkExperience() {
             <button
               onClick={() => setActiveFilter("education")}
               className={`px-4 py-2 rounded-full text-sm font-normal transition-colors ${
-                activeFilter === "education" ? "bg-[#30af5b] text-black" : "text-white hover:bg-gray-700"
+                activeFilter === "education" ? "bg-[#9FEF00] text-black" : "text-white hover:bg-gray-700"
               }`}
             >
               Education
@@ -303,23 +303,23 @@ export default function WorkExperience() {
                 className={`relative flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-0 md:left-1/2 top-0 w-8 h-8 rounded-full bg-gray-900 border-4 border-[#30af5b] transform translate-x-[-14px] md:translate-x-[-14px] z-10 flex items-center justify-center">
+                <div className="absolute left-0 md:left-1/2 top-0 w-8 h-8 rounded-full bg-gray-900 border-4 border-[#9FEF00] transform translate-x-[-14px] md:translate-x-[-14px] z-10 flex items-center justify-center">
                   {item.type === "work" ? (
-                    <Briefcase className="w-3 h-3 text-[#30af5b]" />
+                    <Briefcase className="w-3 h-3 text-[#30af5b] dark:text-[#9FEF00]" />
                   ) : (
-                    <GraduationCap className="w-3 h-3 text-[#30af5b]" />
+                    <GraduationCap className="w-3 h-3 text-[#30af5b] dark:text-[#9FEF00]" />
                   )}
                 </div>
 
                 {/* Content */}
                 <div className="ml-12 md:ml-0 md:w-[calc(50%-20px)]">
                   <div
-                    className={`dark:bg-[#0b0b0e] border bg-white rounded-xl p-6 hover:shadow-lg hover:shadow-[#30af5b]/5 transition-all cursor-pointer ${
-                      expandedId === item.id ? "ring-2 ring-[#30af5b]/50" : ""
+                    className={`dark:bg-[#0b0b0e] border bg-white rounded-xl p-6 hover:shadow-lg hover:shadow-[#9FEF00]/5 transition-all cursor-pointer ${
+                      expandedId === item.id ? "ring-2 ring-[#9FEF00]/50" : ""
                     }`}
                     onClick={() => toggleExpand(item.id)}
                   >
-                    <div className="flex items-center gap-2 text-sm text-[#30af5b] mb-2">
+                    <div className="flex items-center gap-2 text-sm text-[#30af5b] dark:text-[#9FEF00] mb-2">
                       <Calendar className="w-4 h-4" />
                       <span>{item.period}</span>
                     </div>
@@ -338,7 +338,7 @@ export default function WorkExperience() {
                     </div>
 
                     <button
-                      className="mt-4 text-sm text-[#30af5b] flex items-center gap-1 md:hidden"
+                      className="mt-4 text-sm text-[#9FEF00] flex items-center gap-1 md:hidden"
                       onClick={(e) => {
                         e.stopPropagation()
                         toggleExpand(item.id)
