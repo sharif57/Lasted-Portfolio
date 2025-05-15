@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Sparkles } from "lucide-react";
 
 interface WorkExperience {
   title: string;
@@ -87,8 +87,8 @@ export default function WorkExperience() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <span className="inline-block w-5 h-5 text-[#9FEF00]">✦</span>
-            <span className="text-sm uppercase text-[#9FEF00] tracking-wider font-medium">
+          <Sparkles className="h-5 w-5 text-[#30af5b]" />
+            <span className="text-sm uppercase text-[#30af5b] tracking-wider font-medium">
               WORK HISTORY
             </span>
           </div>
@@ -108,7 +108,7 @@ export default function WorkExperience() {
               className="border-b border-gray-800 overflow-hidden transition-all duration-300"
             >
               <div
-                className="flex items-center justify-between py-6 cursor-pointer hover:bg-gray-900/30 px-2 rounded-md transition-colors"
+                className="flex items-center justify-between py-6 cursor-pointer  px-2 rounded-md transition-colors"
                 onClick={() => toggleExpand(index)}
               >
                 <div className="flex items-center gap-4">

@@ -96,7 +96,7 @@ export default function DesignProcess() {
 
   return (
     <section className="w-full  text-white py-16 px-4 md:px-8 lg:px-16">
-      <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="h-5 w-5 text-[#30af5b]" />
 
@@ -155,7 +155,7 @@ export default function DesignProcess() {
             {processSteps.map((step, index) => (
               <div
                 key={index}
-                className="min-w-[280px] md:min-w-[320px] bg-gray-900 rounded-xl p-6 border border-gray-800 flex flex-col snap-start"
+                className="min-w-[280px] md:min-w-[320px] bg-white text-black dark:text-white dark:bg-[#0b0b0d] rounded-3xl p-6 border  flex flex-col snap-start"
               >
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center mb-6">
                   {step.icon}
