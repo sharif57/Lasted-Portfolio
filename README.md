@@ -25,17 +25,17 @@
 ---
 
 ### 📊 GitHub Stats
-![Sharif's GitHub stats](https://github.com/sharif57/)
+
+![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=sharif57&show_icons=true&theme=radical)  
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sharif57&layout=compact&theme=radical)
 
 ---
 
 ### 📫 Connect with me:
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://sm-sharif-mahamud.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sharif-mahamud)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://sm-sharif-mahamud.vercel.app/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sharif-mahamud)  
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sharifmahamud577951@gmail.com)
 
 ---
 
 > “Design isn’t just how it looks — it’s how it feels when it *works*.” – You, the Frontend Vibe Coder 😎
-
