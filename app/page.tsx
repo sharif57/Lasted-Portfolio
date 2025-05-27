@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Slider from "@/components/Slider";
 import AboutMe from "./about/page";
@@ -7,21 +7,28 @@ import EnhancedExpertiseSection from "@/components/ExpertiseSection";
 import Hero from "@/components/Hero";
 import Tech from "@/components/Tech";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import AboutMes from "@/components/AboutMes";
 
 export default function Home() {
- 
-
   return (
     <div className=" bg-[#f7f8fa] dark:bg-[#0c0a09]">
-    <Hero/>
+
+      <Hero />
 
       <Slider />
 
-      {/* <AboutMe/> */}
-      <ProjectsSection/>
+      <AboutMes />
+
+      {/* <AboutMe /> */}
+
+      <ProjectsSection />
+
       <EnhancedExpertiseSection></EnhancedExpertiseSection>
-      <Tech/>
-      <TestimonialCarousel/>
+
+      <Tech />
+
+      <TestimonialCarousel />
+
     </div>
   );
 }
