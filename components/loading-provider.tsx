@@ -5,6 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import LoadingScreen from "./loading-screen"
 
+
 export default function LoadingProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
 
@@ -18,7 +19,7 @@ export default function LoadingProvider({ children }: { children: React.ReactNod
   }, [])
 
   if (isLoading) {
-    return <LoadingScreen isComplete={!isLoading} />
+    return <LoadingScreen isLoading={isLoading} />
   }
 
   return <div className="animate-in fade-in duration-500">{children}</div>
