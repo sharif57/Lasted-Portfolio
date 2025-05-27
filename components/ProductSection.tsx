@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
+import Link from "next/link"
 
 // Project data
 const projects = [
@@ -83,9 +84,9 @@ export default function ProjectsSection() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+       <Link href={'/projects'}> <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
           View All Projects
-        </button>
+        </button></Link>
       </div>
     </section>
   )

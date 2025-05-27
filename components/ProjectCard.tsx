@@ -38,7 +38,7 @@ export default function ProjectCard({ project, isHovered, isDisabled, onMouseEnt
         />
       </div>
       <div className="pt-2 pb-4 px-6">
-        <h3 className="text-xl font-medium">{project.title}</h3>
+        <h3 className="text-xl font-medium text-black ">{project.title}</h3>
         <div className="flex justify-between items-center mt-1">
           <p className="text-sm text-gray-600">{project.description}</p>
           <p className="text-sm text-gray-600">{project.year}</p>

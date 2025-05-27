@@ -18,9 +18,9 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-medium tracking-tighter mb-6">
-              Crafting{" "}
-              <span className="text-[#30af5b]">purpose driven experiences</span>{" "}
-              that inspire & engage.
+              Building{" "}
+              <span className="text-[#30af5b]">exceptional digital solutions</span>{" "}
+              that innovate & deliver.
             </h1>
 
             <div className="mt-12 border-t border-border pt-12">

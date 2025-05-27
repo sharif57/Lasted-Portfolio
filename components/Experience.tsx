@@ -404,7 +404,7 @@ export default function WorkExperience() {
       organization: "Bdcalling IT Ltd",
       desc: "Currently working as a Frontend Developer, specializing in building modern and responsive web applications using Next.js and React.",
       type: "work",
-      period: "2022 - Present",
+      period: "2024 - Present",
       thumbnail: "/placeholder.svg?height=80&width=80",
     },
     {
@@ -431,7 +431,7 @@ export default function WorkExperience() {
       organization: "Programming Hero",
       desc: "Currently enrolled in advanced web development course, focusing on Next.js, TypeScript, and enterprise-level application development.",
       type: "education", 
-      period: "2024 - Present",
+      period: "2025 - Present",
       thumbnail: "/placeholder.svg?height=80&width=80",
     },
     {
@@ -440,7 +440,7 @@ export default function WorkExperience() {
       organization: "Programming Hero",
       desc: "Completed an intensive 6-month web development course at Programming Hero, gaining hands-on experience in full-stack development with the MERN stack.",
       type: "education",
-      period: "2021 - 2022",
+      period: "2023 - 2023",
       thumbnail: "/placeholder.svg?height=80&width=80",
     },
     {
