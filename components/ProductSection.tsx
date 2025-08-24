@@ -6,37 +6,73 @@ import Link from "next/link"
 
 // Project data
 const projects = [
+
   {
     id: 1,
-    title: "Aora",
-    description: "Development",
-    year: "2024",
+    title: "Oeg Fitness",
+    description: "A modern fitness and gym management web application designed for tracking workouts, diet plans, membership management, and performance analytics.",
+    year: "2025",
     bgColor: "bg-yellow-100",
-    image: "/aora.webp",
-  },
+    image: "/p1.png",
+    liveLink: "https://oegfitness.com/",
+    githubLink: "https://github.com/sharif57/oeg-fitness",
+    category: "Fitness & Health",
+    role: "Full Stack Developer",
+    duration: "Jan 2025 - Mar 2025",
+    teamSize: 3,
+    status: "Completed",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase"
+    ],
+    features: [
+      "User authentication with Firebase",
+      "Workout and diet plan tracking",
+      "Membership & subscription management",
+      "Admin dashboard for trainers and staff",
+      "Responsive UI with Tailwind CSS",
+      "Analytics and progress tracking"
+    ],
+    tags: ["Fitness", "Gym", "Health", "Web App"],
+    contribution: "Developed frontend UI, integrated authentication, and implemented dashboard functionalities.",
+    develop: "Design and Development"
+  }
+
+  ,
   {
     id: 2,
-    title: "Code Screenshot",
+    title: "Crypto Education",
     description: "Development & Design",
-    year: "2024",
+    year: "2025",
     bgColor: "bg-pink-100",
-    image: "/aora.webp",
+    image: "/Screenshot 2025-08-24 154754.png",
+    develop: "Design and Development"
+
   },
   {
     id: 3,
-    title: "iPhone 15 Pro",
+    title: "Dhataharris Health-Care Platform",
     description: "Development & Design",
-    year: "2024",
+    year: "2025",
     bgColor: "bg-gray-200",
-    image: "/aora.webp",
+    image: "/Screenshot 2025-08-24 163330.png",
+    develop: "Design and Development"
+
   },
   {
     id: 4,
-    title: "Ochi Design",
+    title: "Angry GPT",
     description: "Development & Design",
     year: "2024",
     bgColor: "bg-green-100",
-    image: "/aora.webp",
+    image: "/Screenshot 2025-08-24 164510.png",
+    develop: "Design and Development"
+
   },
 ]
 
@@ -66,25 +102,27 @@ export default function ProjectsSection() {
       </div>
 
       <h2 className="lg:text-5xl text-2xl font-semibold mb-2">Selected Projects</h2>
-      <p className="text-gray-600 mb-10">
+      <p className="text-gray-200 mb-10">
         Here's a curated selection showcasing my expertise and the achieved results.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            isHovered={hoveredId === project.id}
-            isDisabled={hoveredId !== null && hoveredId !== project.id}
-            onMouseEnter={() => handleMouseEnter(project.id)}
-            onMouseLeave={handleMouseLeave}
-          />
+          <Link key={project.id} href={`/projects/${project.id}`}>
+            <ProjectCard
+              project={project}
+
+              isHovered={hoveredId === project.id}
+              isDisabled={hoveredId !== null && hoveredId !== project.id}
+              onMouseEnter={() => handleMouseEnter(project.id)}
+              onMouseLeave={handleMouseLeave}
+            />
+          </Link>
         ))}
       </div>
 
       <div className="flex justify-center mt-10">
-       <Link href={'/projects'}> <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+        <Link href={'/projects'}> <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
           View All Projects
         </button></Link>
       </div>
