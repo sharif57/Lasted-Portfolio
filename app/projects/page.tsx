@@ -181,7 +181,33 @@ const projects = [
       "Designed and developed chatbot UI, integrated AI models, and built workflow automation features.",
     develop: "Design and Development"
   },
- 
+ {
+  id: 6,
+  title: "HolyBot.ai",
+  subtitle: "Christian AI Chatbot",
+  description:
+    "An AI-powered chatbot allowing users to ask questions about the Bible, upload religious documents and media, and engage in faith-based interaction.",
+  year: "2025",
+  bgColor: "bg-white", // (You could customize this visually.)
+  image: "/holy.png",
+  liveLink: "https://holybot.ai/",
+  githubLink: 'https://github.com/sharif57/new-holy', // (Add if available.)
+  category: "Religion & AI",
+  role: "AI Integration / Frontend Developer",
+  duration: "2025",
+  teamSize: "N/A",
+  status: "Active",
+  technologies: ["Next.js?", "React?", "OpenAI API?", "Tailwind CSS?"], // Adjust based on details
+  features: [
+    "Ask theological questions (e.g., Bible verses, meaning)",
+    "Upload documents & images for spiritual insight",
+    "Interactive Q&A with spiritual guidance"
+  ],
+  tags: ["AI", "Christianity", "Chatbot", "Spiritual", "Bible"],
+  contribution: "Designed UI for prompt input and display of scriptural responses.",
+  develop: "Design and Development"
+}
+
 
 
 
