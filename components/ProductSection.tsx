@@ -42,7 +42,6 @@ const projects = [
     contribution: "Developed frontend UI, integrated authentication, and implemented dashboard functionalities.",
     develop: "Design and Development"
   }
-
   ,
   {
     id: 2,
@@ -57,23 +56,77 @@ const projects = [
   {
     id: 3,
     title: "Dhataharris Health-Care Platform",
-    description: "Development & Design",
+    subtitle: "Doctor Consultation & Donation",
+    description:
+      "A modern healthcare platform that enables patients to reach doctors, access medical papers and reports, and support healthcare initiatives through donations.",
     year: "2025",
     bgColor: "bg-gray-200",
     image: "/Screenshot 2025-08-24 163330.png",
+    liveLink: "https://your-dhataharris-live-link.com",
+    githubLink: "https://github.com/sharif57/dhataharris-healthcare",
+    category: "Healthcare & Donation",
+    role: "Full-Stack Developer",
+    duration: "Mar 2025 - Apr 2025",
+    teamSize: 4,
+    status: "Ongoing",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe / PayPal Integration"
+    ],
+    features: [
+      "Doctor consultation booking",
+      "Medical paper & report access",
+      "Donation system for healthcare causes",
+      "Patient dashboard with history",
+      "Secure authentication & payments"
+    ],
+    tags: ["Healthcare", "Donation", "Doctor", "Web App", "Reports"],
+    contribution:
+      "Developed user dashboard, integrated donation system, and designed healthcare report access functionality.",
     develop: "Design and Development"
-
-  },
+  }
+  ,
   {
     id: 4,
     title: "Angry GPT",
-    description: "Development & Design",
+    subtitle: "AI Bookstore & Chat Assistant",
+    description:
+      "An innovative platform combining AI-powered chatbot assistance with an online bookstore. Users can purchase books, receive personalized recommendations, and interact with an AI for guidance and support.",
     year: "2024",
     bgColor: "bg-green-100",
     image: "/Screenshot 2025-08-24 164510.png",
+    liveLink: "https://your-angrygpt-live-link.com",
+    githubLink: "https://github.com/sharif57/angry-gpt",
+    category: "AI & E-commerce",
+    role: "Frontend Developer",
+    duration: "Oct 2024 - Dec 2024",
+    teamSize: 3,
+    status: "Completed",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "OpenAI API",
+      "MongoDB",
+      "Stripe"
+    ],
+    features: [
+      "AI-powered chatbot",
+      "Bookstore with search & filter",
+      "Personalized book recommendations",
+      "Secure checkout & payments",
+      "User accounts & order history"
+    ],
+    tags: ["AI", "Books", "Chatbot", "E-commerce", "Web App"],
+    contribution:
+      "Built the responsive UI, integrated AI chatbot with OpenAI API, and implemented book catalog with checkout functionality.",
     develop: "Design and Development"
-
-  },
+  }
 ]
 
 export default function ProjectsSection() {
@@ -86,6 +139,8 @@ export default function ProjectsSection() {
   const handleMouseLeave = () => {
     setHoveredId(null)
   }
+
+
 
   return (
     <section className="container mx-auto px-4 md:px-6 py-12">
@@ -122,7 +177,7 @@ export default function ProjectsSection() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <Link href={'/projects'}> <button className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+        <Link href={'/projects'}>  <button className="bg-black border text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
           View All Projects
         </button></Link>
       </div>

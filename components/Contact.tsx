@@ -43,7 +43,7 @@ export default function Footer() {
             label="LinkedIn"
           />
           <SocialLink
-            href="https://github.com"
+            href="https://github.com/sharif57"
             icon={<Github className="w-5 h-5" />}
             label="GitHub"
           />
@@ -53,7 +53,7 @@ export default function Footer() {
             label="Instagram"
           />
           <SocialLink
-            href="mailto:contact@example.com"
+            href="mailto:sharifmahamud577951@gmail.com"
             icon={<Mail className="w-5 h-5" />}
             label="Email"
           />

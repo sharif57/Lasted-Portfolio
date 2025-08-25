@@ -1,74 +1,190 @@
 "use client"
 
 import ProjectCard from "@/components/ProjectCard"
+import Link from "next/link"
 import { useState } from "react"
 
 // Project data
 const projects = [
   {
     id: 1,
-    title: "Aora",
-    description: "Development",
-    year: "2024",
+    title: "Oeg Fitness",
+    description: "A modern fitness and gym management web application designed for tracking workouts, diet plans, membership management, and performance analytics.",
+    year: "2025",
     bgColor: "bg-yellow-100",
-    image: "/aora.webp",
+    image: "/p1.png",
+    liveLink: "https://oegfitness.com/",
+    githubLink: "https://github.com/sharif57/fitness",
+    category: "Fitness & Health",
+    role: "Full Stack Developer",
+    duration: "Jan 2025 - Mar 2025",
+    teamSize: 3,
+    status: "Completed",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    features: [
+      "User authentication with Custom",
+      'Ai use workout and nutrition data create personalized plans',
+      'Daily life routine suggestions',
+      "Workout and diet plan tracking",
+      "Membership & subscription management",
+      "Admin dashboard for trainers and staff",
+      "Responsive UI with Tailwind CSS",
+      "Analytics and progress tracking"
+    ],
+    tags: ["Fitness", "Gym", "Health", "Web App", 'Workout Tracking', 'Nutrition Generating'],
+    contribution: "Developed frontend UI, integrated authentication, and implemented dashboard functionalities.",
+    develop: "Design and Development"
   },
   {
     id: 2,
-    title: "Code Screenshot",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-pink-100",
-    image: "/aora.webp",
+    title: "Crypto Education",
+    subtitle: "Learning Platform",
+    description:
+      "A comprehensive cryptocurrency education platform designed to teach users about blockchain technology, trading strategies, and digital asset management.",
+    year: "2025",
+    bgColor: "bg-gradient-to-br from-blue-500 to-purple-600",
+    image: "/Screenshot 2025-08-24 154754.png",
+    liveLink: "https://main.theclue.io/",
+    githubLink: "https://github.com/sharif57/Crypto-Education-Frontend",
+    category: "Education & Finance",
+    role: "Frontend Developer",
+    duration: "Jan 2025 - Feb 2025",
+    teamSize: 2,
+    status: "Completed",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", 'Shadcn Ui', "Chart.js", "API Integration"],
+    features: [
+      "Interactive learning modules",
+      "Real-time crypto data",
+      "Progress tracking",
+      "Quiz system",
+      "Certificate generation",
+    ],
+    tags: ["Education", "Crypto", "Finance", "Web App", 'Live Class', 'Chatbot', 'Tutoring Web'],
+    contribution: "Developed interactive UI components and integrated cryptocurrency APIs.",
+    develop: "Design and Development",
   },
-  {
-    id: 3,
-    title: "iPhone 15 Pro",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-gray-200",
-    image: "/aora.webp",
-  },
+
   {
     id: 4,
-    title: "Ochi Design",
-    description: "Development & Design",
+    title: "Angry GPT",
+    subtitle: "AI Bookstore & Chat Assistant",
+    description:
+      "An innovative platform combining AI-powered chatbot assistance with an online bookstore. Users can purchase books, receive personalized recommendations, and interact with an AI for guidance and support.",
     year: "2024",
     bgColor: "bg-green-100",
-    image: "/aora.webp",
+    image: "/Screenshot 2025-08-24 164510.png",
+    liveLink: "https://angry-gpt-frontend.vercel.app/",
+    githubLink: "https://github.com/sharif57/Angry-GPT-Frontend",
+    category: "AI & E-commerce",
+    role: "Frontend Developer",
+    duration: "Oct 2024 - Dec 2024",
+    teamSize: 3,
+    status: "Completed",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "OpenAI API",
+      "MongoDB",
+      "Stripe"
+    ],
+    features: [
+      "AI-powered chatbot",
+      "Bookstore with search & filter",
+      "Personalized book recommendations",
+      "Secure checkout & payments",
+      "User accounts & order history"
+    ],
+    tags: ["AI", "Books", "Chatbot", "E-commerce", "Web App"],
+    contribution:
+      "Built the responsive UI, integrated AI chatbot with OpenAI API, and implemented book catalog with checkout functionality.",
+    develop: "Design and Development"
+  },
+   {
+    id: 3,
+    title: "Dhataharris Health-Care Platform",
+    subtitle: "Doctor Consultation & Donation",
+    description:
+      "A modern healthcare platform that enables patients to reach doctors, access medical papers and reports, and support healthcare initiatives through donations.",
+    year: "2025",
+    bgColor: "bg-gray-200",
+    image: "/Screenshot 2025-08-24 163330.png",
+    liveLink: "https://your-dhataharris-live-link.com",
+    githubLink: "https://github.com/sharif57/dhataharris-healthcare",
+    category: "Healthcare & Donation",
+    role: "Full-Stack Developer",
+    duration: "Mar 2025 - Apr 2025",
+    teamSize: 4,
+    status: "Ongoing",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe / PayPal Integration"
+    ],
+    features: [
+      "Doctor consultation booking",
+      "Medical paper & report access",
+      "Donation system for healthcare causes",
+      "Patient dashboard with history",
+      "Secure authentication & payments"
+    ],
+    tags: ["Healthcare", "Donation", "Doctor", "Web App", "Reports"],
+    contribution:
+      "Developed user dashboard, integrated donation system, and designed healthcare report access functionality.",
+    develop: "Design and Development"
   },
   {
     id: 5,
-    title: "Ochi Design",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-green-100",
-    image: "/aora.webp",
+    title: "Unlock Knowledge",
+    subtitle: "AI-Powered Business Insights",
+    description:
+      "An AI-powered chatbot platform that helps businesses unlock knowledge, streamline workflows, and provide real-time insights to enhance decision-making.",
+    year: "2025",
+    bgColor: "bg-yellow-200",
+    image: "/mon.png",
+    liveLink: "https://morpheus-frontend-black.vercel.app/",
+    githubLink: "https://github.com/sharif57/unlock-knowledge",
+    category: "AI & Business",
+    role: "Frontend Developer",
+    duration: "May 2025 - Jun 2025",
+    teamSize: 2,
+    status: "Ongoing",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "OpenAI API",
+      "Node.js",
+      "MongoDB"
+    ],
+    features: [
+      "AI-powered chatbot for business queries",
+      "Data-driven insights generation",
+      "Workflow automation",
+      "Custom knowledge base integration",
+      "Secure authentication"
+    ],
+    tags: ["AI", "Chatbot", "Business", "Insights", "Automation"],
+    contribution:
+      "Designed and developed chatbot UI, integrated AI models, and built workflow automation features.",
+    develop: "Design and Development"
   },
-  {
-    id: 6,
-    title: "Ochi Design",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-green-100",
-    image: "/aora.webp",
-  },
-  {
-    id: 7,
-    title: "Ochi Design",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-green-100",
-    image: "/aora.webp",
-  },
-  {
-    id: 8,
-    title: "Ochi Design",
-    description: "Development & Design",
-    year: "2024",
-    bgColor: "bg-green-100",
-    image: "/aora.webp",
-  },
+ 
+
+
+
 ]
 
 export default function ProjectsSection() {
@@ -103,14 +219,17 @@ export default function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:mt-20 mt-10">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.id}
-            project={project}
-            isHovered={hoveredId === project.id}
-            isDisabled={hoveredId !== null && hoveredId !== project.id}
-            onMouseEnter={() => handleMouseEnter(project.id)}
-            onMouseLeave={handleMouseLeave}
-          />
+          <Link key={project.id} href={`/projects/${project.id}`}>
+
+            <ProjectCard
+              key={project.id}
+              project={project}
+              isHovered={hoveredId === project.id}
+              isDisabled={hoveredId !== null && hoveredId !== project.id}
+              onMouseEnter={() => handleMouseEnter(project.id)}
+              onMouseLeave={handleMouseLeave}
+            />
+          </Link>
         ))}
       </div>
 
