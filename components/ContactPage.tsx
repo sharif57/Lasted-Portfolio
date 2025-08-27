@@ -176,13 +176,13 @@ export default function ContactPage() {
 
                   <div className="flex gap-4 mt-2">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/sharif-mahamud/"
                       className="text-gray-700 hover:text-black dark:text-white transition-colors"
                     >
                       <Linkedin size={20} />
                     </a>
                     <a
-                      href="#"
+                      href="https://github.com/sharif57"
                       className="text-gray-700 hover:text-black dark:text-white transition-colors"
                     >
                       <Github size={20} />
@@ -194,7 +194,7 @@ export default function ContactPage() {
                       <Instagram size={20} />
                     </a>
                     <a
-                      href="#"
+                      href="mailto:sharifmahamud577951@gmail.com"
                       className="text-gray-700 hover:text-black dark:text-white transition-colors"
                     >
                       <Mail size={20} />
