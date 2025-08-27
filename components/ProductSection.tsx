@@ -157,7 +157,7 @@ export default function ProjectsSection() {
       </div>
 
       <h2 className="lg:text-5xl text-2xl font-semibold mb-2">Selected Projects</h2>
-      <p className="text-gray-200 mb-10">
+      <p className="dark:text-gray-200 text-muted-foreground  mb-10">
         Here's a curated selection showcasing my expertise and the achieved results.
       </p>
 
