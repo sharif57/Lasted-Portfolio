@@ -119,7 +119,7 @@ export default function TestimonialCarousel() {
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 dark:text-white tracking-tight">What others say</h2>
 
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-400">
               I&apos;ve worked with some amazing people over the years, here is what they have to say about me.
             </p>
           </div>

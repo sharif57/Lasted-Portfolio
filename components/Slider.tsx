@@ -10,7 +10,7 @@ const menuItems = [
   { name: "Backend", icon: <Sparkles />, href: "/backend" },
   { name: "Full Stack", icon: <Sparkles />, href: "/fullstack" },
   { name: "UI/UX", icon: <Sparkles />, href: "/ui-ux" },
-  { name: "DevOps", icon: <Sparkles />, href: "/devops" },
+  { name: "Deployment", icon: <Sparkles />, href: "/devops" },
   { name: "Cloud", icon: <Sparkles />, href: "/cloud" },
   { name: "Mobile Dev", icon: <Sparkles />, href: "/mobile" },
   { name: "Web Security", icon: <Sparkles />, href: "/security" },
@@ -43,7 +43,7 @@ export default function Slider() {
         >
           <div className="flex space-x-12 px-8 items-center  border-t-2 border-b-2 lg:py-10 py-5">
             {menuItems.map((item) => (
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer">
                 <Link
                   key={item.name}
                   href={item.href}

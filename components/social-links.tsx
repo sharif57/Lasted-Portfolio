@@ -3,10 +3,10 @@ import Link from "next/link"
 export default function SocialLinks() {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-6">
-      <SocialLink href="https://linkedin.com" label="LINKEDIN" />
-      <SocialLink href="https://github.com" label="GITHUB" />
+      <SocialLink href="https://www.linkedin.com/in/sharif-mahamud/" label="LINKEDIN" />
+      <SocialLink href="https://github.com/sharif57" label="GITHUB" />
       <SocialLink href="https://instagram.com" label="INSTAGRAM" />
-      <SocialLink href="mailto:example@gmail.com" label="GMAIL" />
+      <SocialLink href="mailto:sharifmahamud577951@gmail.com" label="GMAIL" />
     </div>
   )
 }
