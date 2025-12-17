@@ -7,7 +7,7 @@ import Link from "next/link"
 // Project data
 const projects = [
 
-  {
+   {
     id: 1,
     title: "Oeg Fitness",
     description: "A modern fitness and gym management web application designed for tracking workouts, diet plans, membership management, and performance analytics.",
@@ -15,7 +15,7 @@ const projects = [
     bgColor: "bg-yellow-100",
     image: "/p1.png",
     liveLink: "https://oegfitness.com/",
-    githubLink: "https://github.com/sharif57/oeg-fitness",
+    githubLink: "https://github.com/sharif57/fitness",
     category: "Fitness & Health",
     role: "Full Stack Developer",
     duration: "Jan 2025 - Mar 2025",
@@ -25,36 +25,133 @@ const projects = [
       "Next.js",
       "React",
       "Tailwind CSS",
+      "Shadcn UI",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Firebase"
     ],
     features: [
-      "User authentication with Firebase",
+      "User authentication with Custom",
+      'Ai use workout and nutrition data create personalized plans',
+      'Daily life routine suggestions',
       "Workout and diet plan tracking",
       "Membership & subscription management",
       "Admin dashboard for trainers and staff",
       "Responsive UI with Tailwind CSS",
       "Analytics and progress tracking"
     ],
-    tags: ["Fitness", "Gym", "Health", "Web App"],
+    tags: ["Fitness", "Gym", "Health", "Web App", 'Workout Tracking', 'Nutrition Generating'],
     contribution: "Developed frontend UI, integrated authentication, and implemented dashboard functionalities.",
     develop: "Design and Development"
-  }
-  ,
+  },
   {
     id: 2,
     title: "Crypto Education",
-    description: "Development & Design",
+    subtitle: "Learning Platform",
+    description:
+      "A comprehensive cryptocurrency education platform designed to teach users about blockchain technology, trading strategies, and digital asset management.",
     year: "2025",
-    bgColor: "bg-pink-100",
+    bgColor: "bg-gradient-to-br from-blue-500 to-purple-600",
     image: "/Screenshot 2025-08-24 154754.png",
-    develop: "Design and Development"
-
+    liveLink: "https://main.theclue.io/",
+    githubLink: "https://github.com/sharif57/Crypto-Education-Frontend",
+    category: "Education & Finance",
+    role: "Frontend Developer",
+    duration: "Jan 2025 - Feb 2025",
+    teamSize: 2,
+    status: "Completed",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", 'Shadcn Ui', "Chart.js", "API Integration"],
+    features: [
+      "Interactive learning modules",
+      "Real-time crypto data",
+      "Progress tracking",
+      "Quiz system",
+      "Certificate generation",
+    ],
+    tags: ["Education", "Crypto", "Finance", "Web App", 'Live Class', 'Chatbot', 'Tutoring Web'],
+    contribution: "Developed interactive UI components and integrated cryptocurrency APIs.",
+    develop: "Design and Development",
   },
   {
     id: 3,
+    title: "Ridero Delivery",
+    subtitle: "Multi-Role Smart Delivery Platform",
+    description:
+      "A full-featured delivery management platform enabling companies to create delivery requests, riders to track shipments in real time, and drivers to manage pickups and deliveries using live map tracking.",
+    year: "2025",
+    bgColor: "bg-gray-50",
+    image: "/project-6.png",
+    liveLink: "https://riderodelivery.com/",
+    githubLink: "https://github.com/sharif57", // if private, keep null
+    category: "Logistics & Delivery",
+    role: "Frontend Developer / System Designer",
+    duration: "2025",
+    teamSize: "Small Team",
+    status: "Active",
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Google Maps API",
+      "Socket.IO",
+      "JWT Authentication"
+    ],
+    features: [
+      "Three user roles: Rider, Company, Driver",
+      "Company dashboard to create & manage delivery orders",
+      "Driver panel to accept, pickup, and complete deliveries",
+      "Rider dashboard to track delivery status",
+      "Live map tracking for pickup & delivery locations",
+      "Real-time location updates using sockets",
+      "Order status flow: Pending → Picked → On the Way → Delivered",
+      "Authentication & role-based access control",
+      "Responsive design for mobile, tablet, and desktop"
+    ],
+    roles: {
+      company: [
+        "Create delivery requests",
+        "Assign pickup & delivery locations",
+        "Track driver in real time",
+        "View delivery history & analytics"
+      ],
+      driver: [
+        "Accept or reject delivery requests",
+        "View optimized pickup & delivery routes",
+        "Live location sharing on map",
+        "Update delivery status"
+      ],
+      rider: [
+        "Track delivery progress in real time",
+        "View pickup & delivery locations on map",
+        "Receive delivery status updates"
+      ]
+    },
+    maps: {
+      provider: "Google Maps",
+      features: [
+        "Live driver tracking",
+        "Pickup & delivery markers",
+        "Route visualization",
+        "Distance & ETA calculation"
+      ]
+    },
+    tags: [
+      "Delivery",
+      "Logistics",
+      "Real-Time Tracking",
+      "Maps",
+      "Multi-Role System",
+      "SaaS Platform"
+    ],
+    contribution:
+      "Designed and developed responsive dashboards, integrated Google Maps for live tracking, implemented role-based UI flows, and optimized user experience across all devices.",
+    develop: "Design & Development"
+  },
+  {
+    id: 4,
     title: "Dhataharris Health-Care Platform",
     subtitle: "Doctor Consultation & Donation",
     description:
@@ -62,7 +159,7 @@ const projects = [
     year: "2025",
     bgColor: "bg-gray-200",
     image: "/Screenshot 2025-08-24 163330.png",
-    liveLink: "https://your-dhataharris-live-link.com",
+    liveLink: "https://enitiative.org/",
     githubLink: "https://github.com/sharif57/dhataharris-healthcare",
     category: "Healthcare & Donation",
     role: "Full-Stack Developer",
@@ -89,10 +186,9 @@ const projects = [
     contribution:
       "Developed user dashboard, integrated donation system, and designed healthcare report access functionality.",
     develop: "Design and Development"
-  }
-  ,
+  },
   {
-    id: 4,
+    id: 5,
     title: "Angry GPT",
     subtitle: "AI Bookstore & Chat Assistant",
     description:
@@ -100,8 +196,8 @@ const projects = [
     year: "2024",
     bgColor: "bg-green-100",
     image: "/Screenshot 2025-08-24 164510.png",
-    liveLink: "https://your-angrygpt-live-link.com",
-    githubLink: "https://github.com/sharif57/angry-gpt",
+    liveLink: "https://angrygpt.ai/",
+    githubLink: "https://github.com/sharif57/Angry-GPT-Frontend",
     category: "AI & E-commerce",
     role: "Frontend Developer",
     duration: "Oct 2024 - Dec 2024",
@@ -126,7 +222,69 @@ const projects = [
     contribution:
       "Built the responsive UI, integrated AI chatbot with OpenAI API, and implemented book catalog with checkout functionality.",
     develop: "Design and Development"
-  }
+  },
+  {
+    id: 6,
+    title: "Unlock Knowledge",
+    subtitle: "AI-Powered Business Insights",
+    description:
+      "An AI-powered chatbot platform that helps businesses unlock knowledge, streamline workflows, and provide real-time insights to enhance decision-making.",
+    year: "2025",
+    bgColor: "bg-yellow-200",
+    image: "/mon.png",
+    liveLink: "https://your-unlockknowledge-live-link.com",
+    githubLink: "https://github.com/sharif57/unlock-knowledge",
+    category: "AI & Business",
+    role: "Frontend Developer",
+    duration: "May 2025 - Jun 2025",
+    teamSize: 2,
+    status: "Ongoing",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "OpenAI API",
+      "Node.js",
+      "MongoDB"
+    ],
+    features: [
+      "AI-powered chatbot for business queries",
+      "Data-driven insights generation",
+      "Workflow automation",
+      "Custom knowledge base integration",
+      "Secure authentication"
+    ],
+    tags: ["AI", "Chatbot", "Business", "Insights", "Automation"],
+    contribution:
+      "Designed and developed chatbot UI, integrated AI models, and built workflow automation features.",
+    develop: "Design and Development"
+  },
+  {
+    id: 7,
+    title: "HolyBot.ai",
+    subtitle: "Christian AI Chatbot",
+    description:
+      "An AI-powered chatbot allowing users to ask questions about the Bible, upload religious documents and media, and engage in faith-based interaction.",
+    year: "2025",
+    bgColor: "bg-white", // (You could customize this visually.)
+    image: "/holy.png",
+    liveLink: "https://holybot.ai/",
+    githubLink: 'https://github.com/sharif57/new-holy', // (Add if available.)
+    category: "Religion & AI",
+    role: "AI Integration / Frontend Developer",
+    duration: "2025",
+    teamSize: "N/A",
+    status: "Active",
+    technologies: ["Next.js", "React", "OpenAI API", "Tailwind CSS"], // Adjust based on details
+    features: [
+      "Ask theological questions (e.g., Bible verses, meaning)",
+      "Upload documents & images for spiritual insight",
+      "Interactive Q&A with spiritual guidance"
+    ],
+    tags: ["AI", "Christianity", "Chatbot", "Spiritual", "Bible"],
+    contribution: "Designed UI for prompt input and display of scriptural responses.",
+    develop: "Design and Development"
+  },
 ]
 
 export default function ProjectsSection() {
@@ -162,7 +320,7 @@ export default function ProjectsSection() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-        {projects.map((project) => (
+        {projects.slice(0, 4).map((project) => (
           <Link key={project.id} href={`/projects/${project.id}`}>
             <ProjectCard
               project={project}

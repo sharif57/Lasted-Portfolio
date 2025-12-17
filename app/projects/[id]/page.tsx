@@ -76,6 +76,84 @@ export default function ProjectDetails() {
         },
         {
             id: 3,
+            title: "Ridero Delivery",
+            subtitle: "Multi-Role Smart Delivery Platform",
+            description:
+                "A full-featured delivery management platform enabling companies to create delivery requests, riders to track shipments in real time, and drivers to manage pickups and deliveries using live map tracking.",
+            year: "2025",
+            bgColor: "bg-gray-50",
+            image: "/project-6.png",
+            liveLink: "https://riderodelivery.com/",
+            githubLink: "https://github.com/sharif57", // if private, keep null
+            category: "Logistics & Delivery",
+            role: "Frontend Developer / System Designer",
+            duration: "2025",
+            teamSize: "Small Team",
+            status: "Active",
+            technologies: [
+                "Next.js",
+                "React.js",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Tailwind CSS",
+                "Google Maps API",
+                "Socket.IO",
+                "JWT Authentication"
+            ],
+            features: [
+                "Three user roles: Rider, Company, Driver",
+                "Company dashboard to create & manage delivery orders",
+                "Driver panel to accept, pickup, and complete deliveries",
+                "Rider dashboard to track delivery status",
+                "Live map tracking for pickup & delivery locations",
+                "Real-time location updates using sockets",
+                "Order status flow: Pending → Picked → On the Way → Delivered",
+                "Authentication & role-based access control",
+                "Responsive design for mobile, tablet, and desktop"
+            ],
+            roles: {
+                company: [
+                    "Create delivery requests",
+                    "Assign pickup & delivery locations",
+                    "Track driver in real time",
+                    "View delivery history & analytics"
+                ],
+                driver: [
+                    "Accept or reject delivery requests",
+                    "View optimized pickup & delivery routes",
+                    "Live location sharing on map",
+                    "Update delivery status"
+                ],
+                rider: [
+                    "Track delivery progress in real time",
+                    "View pickup & delivery locations on map",
+                    "Receive delivery status updates"
+                ]
+            },
+            maps: {
+                provider: "Google Maps",
+                features: [
+                    "Live driver tracking",
+                    "Pickup & delivery markers",
+                    "Route visualization",
+                    "Distance & ETA calculation"
+                ]
+            },
+            tags: [
+                "Delivery",
+                "Logistics",
+                "Real-Time Tracking",
+                "Maps",
+                "Multi-Role System",
+                "SaaS Platform"
+            ],
+            contribution:
+                "Designed and developed responsive dashboards, integrated Google Maps for live tracking, implemented role-based UI flows, and optimized user experience across all devices.",
+            develop: "Design & Development"
+        },
+        {
+            id: 4,
             title: "Dhataharris Health-Care Platform",
             subtitle: "Doctor Consultation & Donation",
             description:
@@ -112,7 +190,7 @@ export default function ProjectDetails() {
             develop: "Design and Development"
         },
         {
-            id: 4,
+            id: 5,
             title: "Angry GPT",
             subtitle: "AI Bookstore & Chat Assistant",
             description:
@@ -148,7 +226,7 @@ export default function ProjectDetails() {
             develop: "Design and Development"
         },
         {
-            id: 5,
+            id: 6,
             title: "Unlock Knowledge",
             subtitle: "AI-Powered Business Insights",
             description:
@@ -184,7 +262,7 @@ export default function ProjectDetails() {
             develop: "Design and Development"
         },
         {
-            id: 6,
+            id: 7,
             title: "HolyBot.ai",
             subtitle: "Christian AI Chatbot",
             description:
@@ -208,7 +286,9 @@ export default function ProjectDetails() {
             tags: ["AI", "Christianity", "Chatbot", "Spiritual", "Bible"],
             contribution: "Designed UI for prompt input and display of scriptural responses.",
             develop: "Design and Development"
-        }
+        },
+
+
 
 
     ]

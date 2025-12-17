@@ -71,45 +71,86 @@ const projects = [
     contribution: "Developed interactive UI components and integrated cryptocurrency APIs.",
     develop: "Design and Development",
   },
-
   {
-    id: 4,
-    title: "Angry GPT",
-    subtitle: "AI Bookstore & Chat Assistant",
+    id: 3,
+    title: "Ridero Delivery",
+    subtitle: "Multi-Role Smart Delivery Platform",
     description:
-      "An innovative platform combining AI-powered chatbot assistance with an online bookstore. Users can purchase books, receive personalized recommendations, and interact with an AI for guidance and support.",
-    year: "2024",
-    bgColor: "bg-green-100",
-    image: "/Screenshot 2025-08-24 164510.png",
-    liveLink: "https://angry-gpt-frontend.vercel.app/",
-    githubLink: "https://github.com/sharif57/Angry-GPT-Frontend",
-    category: "AI & E-commerce",
-    role: "Frontend Developer",
-    duration: "Oct 2024 - Dec 2024",
-    teamSize: 3,
-    status: "Completed",
+      "A full-featured delivery management platform enabling companies to create delivery requests, riders to track shipments in real time, and drivers to manage pickups and deliveries using live map tracking.",
+    year: "2025",
+    bgColor: "bg-gray-50",
+    image: "/project-6.png",
+    liveLink: "https://riderodelivery.com/",
+    githubLink: "https://github.com/sharif57", // if private, keep null
+    category: "Logistics & Delivery",
+    role: "Frontend Developer / System Designer",
+    duration: "2025",
+    teamSize: "Small Team",
+    status: "Active",
     technologies: [
       "Next.js",
-      "React",
-      "Tailwind CSS",
-      "OpenAI API",
+      "React.js",
+      "Node.js",
+      "Express.js",
       "MongoDB",
-      "Stripe"
+      "Tailwind CSS",
+      "Google Maps API",
+      "Socket.IO",
+      "JWT Authentication"
     ],
     features: [
-      "AI-powered chatbot",
-      "Bookstore with search & filter",
-      "Personalized book recommendations",
-      "Secure checkout & payments",
-      "User accounts & order history"
+      "Three user roles: Rider, Company, Driver",
+      "Company dashboard to create & manage delivery orders",
+      "Driver panel to accept, pickup, and complete deliveries",
+      "Rider dashboard to track delivery status",
+      "Live map tracking for pickup & delivery locations",
+      "Real-time location updates using sockets",
+      "Order status flow: Pending → Picked → On the Way → Delivered",
+      "Authentication & role-based access control",
+      "Responsive design for mobile, tablet, and desktop"
     ],
-    tags: ["AI", "Books", "Chatbot", "E-commerce", "Web App"],
+    roles: {
+      company: [
+        "Create delivery requests",
+        "Assign pickup & delivery locations",
+        "Track driver in real time",
+        "View delivery history & analytics"
+      ],
+      driver: [
+        "Accept or reject delivery requests",
+        "View optimized pickup & delivery routes",
+        "Live location sharing on map",
+        "Update delivery status"
+      ],
+      rider: [
+        "Track delivery progress in real time",
+        "View pickup & delivery locations on map",
+        "Receive delivery status updates"
+      ]
+    },
+    maps: {
+      provider: "Google Maps",
+      features: [
+        "Live driver tracking",
+        "Pickup & delivery markers",
+        "Route visualization",
+        "Distance & ETA calculation"
+      ]
+    },
+    tags: [
+      "Delivery",
+      "Logistics",
+      "Real-Time Tracking",
+      "Maps",
+      "Multi-Role System",
+      "SaaS Platform"
+    ],
     contribution:
-      "Built the responsive UI, integrated AI chatbot with OpenAI API, and implemented book catalog with checkout functionality.",
-    develop: "Design and Development"
+      "Designed and developed responsive dashboards, integrated Google Maps for live tracking, implemented role-based UI flows, and optimized user experience across all devices.",
+    develop: "Design & Development"
   },
-   {
-    id: 3,
+  {
+    id: 4,
     title: "Dhataharris Health-Care Platform",
     subtitle: "Doctor Consultation & Donation",
     description:
@@ -117,7 +158,7 @@ const projects = [
     year: "2025",
     bgColor: "bg-gray-200",
     image: "/Screenshot 2025-08-24 163330.png",
-    liveLink: "https://your-dhataharris-live-link.com",
+    liveLink: "https://enitiative.org/",
     githubLink: "https://github.com/sharif57/dhataharris-healthcare",
     category: "Healthcare & Donation",
     role: "Full-Stack Developer",
@@ -147,6 +188,42 @@ const projects = [
   },
   {
     id: 5,
+    title: "Angry GPT",
+    subtitle: "AI Bookstore & Chat Assistant",
+    description:
+      "An innovative platform combining AI-powered chatbot assistance with an online bookstore. Users can purchase books, receive personalized recommendations, and interact with an AI for guidance and support.",
+    year: "2024",
+    bgColor: "bg-green-100",
+    image: "/Screenshot 2025-08-24 164510.png",
+    liveLink: "https://angrygpt.ai/",
+    githubLink: "https://github.com/sharif57/Angry-GPT-Frontend",
+    category: "AI & E-commerce",
+    role: "Frontend Developer",
+    duration: "Oct 2024 - Dec 2024",
+    teamSize: 3,
+    status: "Completed",
+    technologies: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "OpenAI API",
+      "MongoDB",
+      "Stripe"
+    ],
+    features: [
+      "AI-powered chatbot",
+      "Bookstore with search & filter",
+      "Personalized book recommendations",
+      "Secure checkout & payments",
+      "User accounts & order history"
+    ],
+    tags: ["AI", "Books", "Chatbot", "E-commerce", "Web App"],
+    contribution:
+      "Built the responsive UI, integrated AI chatbot with OpenAI API, and implemented book catalog with checkout functionality.",
+    develop: "Design and Development"
+  },
+  {
+    id: 6,
     title: "Unlock Knowledge",
     subtitle: "AI-Powered Business Insights",
     description:
@@ -154,7 +231,7 @@ const projects = [
     year: "2025",
     bgColor: "bg-yellow-200",
     image: "/mon.png",
-    liveLink: "https://morpheus-frontend-black.vercel.app/",
+    liveLink: "https://your-unlockknowledge-live-link.com",
     githubLink: "https://github.com/sharif57/unlock-knowledge",
     category: "AI & Business",
     role: "Frontend Developer",
@@ -181,32 +258,33 @@ const projects = [
       "Designed and developed chatbot UI, integrated AI models, and built workflow automation features.",
     develop: "Design and Development"
   },
- {
-  id: 6,
-  title: "HolyBot.ai",
-  subtitle: "Christian AI Chatbot",
-  description:
-    "An AI-powered chatbot allowing users to ask questions about the Bible, upload religious documents and media, and engage in faith-based interaction.",
-  year: "2025",
-  bgColor: "bg-white", // (You could customize this visually.)
-  image: "/holy.png",
-  liveLink: "https://holybot.ai/",
-  githubLink: 'https://github.com/sharif57/new-holy', // (Add if available.)
-  category: "Religion & AI",
-  role: "AI Integration / Frontend Developer",
-  duration: "2025",
-  teamSize: "N/A",
-  status: "Active",
-  technologies: ["Next.js?", "React?", "OpenAI API?", "Tailwind CSS?"], // Adjust based on details
-  features: [
-    "Ask theological questions (e.g., Bible verses, meaning)",
-    "Upload documents & images for spiritual insight",
-    "Interactive Q&A with spiritual guidance"
-  ],
-  tags: ["AI", "Christianity", "Chatbot", "Spiritual", "Bible"],
-  contribution: "Designed UI for prompt input and display of scriptural responses.",
-  develop: "Design and Development"
-}
+  {
+    id: 7,
+    title: "HolyBot.ai",
+    subtitle: "Christian AI Chatbot",
+    description:
+      "An AI-powered chatbot allowing users to ask questions about the Bible, upload religious documents and media, and engage in faith-based interaction.",
+    year: "2025",
+    bgColor: "bg-white", // (You could customize this visually.)
+    image: "/holy.png",
+    liveLink: "https://holybot.ai/",
+    githubLink: 'https://github.com/sharif57/new-holy', // (Add if available.)
+    category: "Religion & AI",
+    role: "AI Integration / Frontend Developer",
+    duration: "2025",
+    teamSize: "N/A",
+    status: "Active",
+    technologies: ["Next.js", "React", "OpenAI API", "Tailwind CSS"], // Adjust based on details
+    features: [
+      "Ask theological questions (e.g., Bible verses, meaning)",
+      "Upload documents & images for spiritual insight",
+      "Interactive Q&A with spiritual guidance"
+    ],
+    tags: ["AI", "Christianity", "Chatbot", "Spiritual", "Bible"],
+    contribution: "Designed UI for prompt input and display of scriptural responses.",
+    develop: "Design and Development"
+  },
+
 
 
 
